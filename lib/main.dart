@@ -49,7 +49,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
     location();
   }
 
-  void location() async {
+  Future<void> location() async {
     bool _serviceEnabled;
     LocationPermission _permissionGranted;
     Position _position;
@@ -77,6 +77,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> {
 
     ref.read(latitudeProvider.notifier).state = _position.latitude;
     ref.read(longitudeProvider.notifier).state = _position.longitude;
+
   }
 
   @override
