@@ -5,7 +5,6 @@ import 'package:dio/dio.dart';
 import 'package:retrofit/retrofit.dart';
 import 'package:retrofit_exam2/api_service/dust.dart';
 
-
 part 'api_service.g.dart';
 
 @RestApi(baseUrl: "http://api.openweathermap.org/")
